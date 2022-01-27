@@ -4,7 +4,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question("Insira o valor a ser convertido seguido do grau.(Ex: 101f ou 34.5c) ", (answer) => {
+rl.question("Insira o valor a ser convertido seguido do grau.(Ex: 101f ou 34.5c)\n", (answer) => {
   function transformDegrees(degree) {
     const CelsiusExists = degree.toUpperCase().includes('C');
     const FahrenheitExists = degree.toUpperCase().includes('F');
